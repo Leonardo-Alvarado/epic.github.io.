@@ -1,0 +1,223 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f96332; /* Cambia el color al pasar el cursor */
+  }
+  
+  /* Animación para la barra de navegación */
+  nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #f96332;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav ul li:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  /* Estilos para la sección de usuario */
+  .seccion-usuario {
+    display: flex;
+    align-items: center;
+  }
+  
+  .seccion-usuario a {
+    font-size: 16px;
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s; /* Agregar transición de color */
+  }
+  
+  .seccion-usuario a:hover {
+    color: #f96332; /* Cambia el color al pasar el cursor */
+  }
+  
+  .seccion-usuario a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #f96332; /* Cambia el color de la línea subrayada */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .seccion-usuario a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  /* ================================= */ /* ================================= */ /* ================================= */
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #183a5d; /* Fondo azul oscuro */
+    color: #fff; /* Texto blanco */
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0f2c47; /* Fondo azul medio */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #ffd700; /* Borde dorado */
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffd700; /* Texto dorado */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+.video {
+    margin-bottom: 40px;
+    border: 5px solid #ffd700; /* Borde dorado */
+    border-radius: 8px;
+    overflow: hidden;
+}
+.video iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-bottom: 5px solid #ffd700; /* Borde dorado en la parte inferior */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.video-title {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #ffd700; /* Fondo dorado */
+    color: #183a5d; /* Texto azul oscuro */
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* ================================= */ /* ================================= */ /* ================================= */
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .seccion-informacion,
+  .seccion-enlaces,
+  .seccion-redes-sociales {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .seccion-informacion h3,
+  .seccion-enlaces h3,
+  .seccion-redes-sociales h3 {
+    margin-bottom: 20px;
+  }
+  
+  .seccion-informacion p,
+  .seccion-enlaces ul,
+  .seccion-redes-sociales ul {
+    margin-bottom: 20px;
+  }
+  
+  .seccion-enlaces a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .seccion-enlaces a:hover {
+    color: #f96332;
+  }
+  
+  .seccion-enlaces ul,
+  .seccion-redes-sociales ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .seccion-enlaces ul li,
+  .seccion-redes-sociales ul li {
+    margin-bottom: 10px;
+  }
+  
+  .seccion-redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .seccion-redes-sociales ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .seccion-redes-sociales ul li a {
+    color: #fff;
+    font-size: 1.5em;
+  }
+  
+  .seccion-redes-sociales ul li a:hover {
+    color: #ddd;
+  }
+  

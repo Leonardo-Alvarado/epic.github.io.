@@ -1,0 +1,464 @@
+/* Estilos para el encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f96332; /* Cambia el color al pasar el cursor */
+}
+
+/* Animación para la barra de navegación */
+nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #f96332;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Estilos para la sección de usuario */
+.seccion-usuario {
+  display: flex;
+  align-items: center;
+}
+
+.seccion-usuario a {
+  font-size: 16px;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s; /* Agregar transición de color */
+}
+
+.seccion-usuario a:hover {
+  color: #f96332; /* Cambia el color al pasar el cursor */
+}
+
+.seccion-usuario a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #f96332; /* Cambia el color de la línea subrayada */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.seccion-usuario a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+/* ================================= */ /* ================================= */ /* ================================= */
+
+/* Estilos para el cuerpo de la página */
+
+
+
+.seccion-destacada h2 {
+  text-align: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 2em;
+  color: #f96332;
+}
+
+.seccion-destacada {
+  background-color: #eeeeea; /* Cambia el color de fondo de la sección destacada */
+  padding: 20px; /* Ajusta el relleno según sea necesario */
+  margin-bottom: -5px;
+}
+
+/* Estilos para la sección de beneficios */
+.seccion-beneficios {
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.seccion-beneficios h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  margin-top: 40px; /* Ajusta el espacio superior según sea necesario */
+  margin-bottom: 40px; /* Ajusta el espacio inferior según sea necesario */
+  color: #fff;
+}
+
+.seccion-beneficios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.seccion-beneficios li {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.seccion-beneficios li:hover {
+  transform: translateX(10px);
+  color: #f96332;
+}
+
+.seccion-beneficios li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.seccion-beneficios li a:hover {
+  color: #f96332;
+}
+
+/* Estilos para los testimonios */
+.seccion-testimonios {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.seccion-testimonios h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #333; /* Color del texto */
+  margin-top: 50px; /* Ajusta el espacio superior según sea necesario */
+  margin-bottom: 55px; /* Ajusta el espacio inferior según sea necesario */
+  text-align: center; /* Centra el texto */
+}
+
+.testimonio {
+  background-color: #fff;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center; /* Centra el texto */
+}
+
+.testimonio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonio p {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.testimonio strong {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+/* Estilos para la sección de registro */
+.registro-section {
+  background-color: #f96332;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+}
+
+
+.registro-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: -10px; /* Ajusta el espacio superior según sea necesario */
+  margin-bottom: 10px; /* Ajusta el espacio inferior según sea necesario */
+}
+
+.registro-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.registro-card {
+  background-color: #fff;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.registro-card__logo {
+  max-width: 300px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.registro-card__button {
+  display: inline-block;
+  background-color: #f96332;
+  color: #fff;
+  padding: 15px 50px; /* Ajusta el tamaño del botón según sea necesario */
+  font-size: 18px; /* Ajusta el tamaño del texto del botón según sea necesario */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.registro-card__button:hover {
+  background-color: #f63507;
+}
+
+
+/* CSS adicional */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #eeeeea;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -20px;
+  margin-top: -80px; /
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 20px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  position: relative; /* Add position relative for video positioning */
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 600px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url('/Img/Cursos/2.jpg');
+}
+
+.card[for="c2"] {
+  background-image: url('/Img/Cursos/3.jpg');
+}
+
+.card[for="c3"] {
+  background-image: url('/Img/Cursos/4.jpg');
+}
+
+.card[for="c4"] {
+  background-image: url('/Img/Cursos/5.jpg');
+}
+
+.media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================================= */ /* ================================= */ /* ================================= */
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.seccion-informacion,
+.seccion-enlaces,
+.seccion-redes-sociales {
+  flex: 1;
+  text-align: center;
+}
+
+.seccion-informacion h3,
+.seccion-enlaces h3,
+.seccion-redes-sociales h3 {
+  margin-bottom: 20px;
+}
+
+.seccion-informacion p,
+.seccion-enlaces ul,
+.seccion-redes-sociales ul {
+  margin-bottom: 20px;
+}
+
+.seccion-enlaces a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.seccion-enlaces a:hover {
+  color: #f96332;
+}
+
+.seccion-enlaces ul,
+.seccion-redes-sociales ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.seccion-enlaces ul li,
+.seccion-redes-sociales ul li {
+  margin-bottom: 10px;
+}
+
+.seccion-redes-sociales ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seccion-redes-sociales ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.seccion-redes-sociales ul li a {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.seccion-redes-sociales ul li a:hover {
+  color: #ddd;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E.P.I.C - Perfil de Usuario</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div class="contenedor-header">
+      <nav>
+        <ul>
+          <li><a href="./principal.html">Inicio</a></li>
+          <li><a href="./course.html">Cursos</a></li>
+          <li><a href="./community.html">Comunidad</a></li>
+        </ul>
+      </nav>
+      <div class="seccion-usuario">
+        <a href="./index.html">Cerrar Sesión</a>
+      </div>
+    </div>
+  </header>
+  <section class="seccion-perfil">
+    <h2>Perfil de Usuario</h2>
+
+    <div class="avatar">
+      <img src="imagenes/avatar.png" alt="Avatar de usuario">
+    </div>
+
+    <div class="informacion-usuario">
+      <h3>Nombre Completo:</h3>
+      <p>Usuario de Ejemplo</p>
+
+      <h3>Correo Electrónico:</h3>
+      <p>usuario@ejemplo.com</p>
+
+      <h3>Fecha de Registro:</h3>
+      <p>14/03/2024</p>
+    </div>
+
+    <div class="menu-perfil">
+      <ul>
+        <li><a href="#">Mis Cursos</a></li>
+        <li><a href="#">Mis Actividades</a></li>
+        <li><a href="#">Mi Progreso</a></li>
+        <li><a href="#">Ajustes de Cuenta</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+
+    <div class="seccion-cursos">
+      <h2>Mis cursos</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="imagenes/curso-ingles-basico.jpg" alt="Curso de inglés básico">
+            <h3>Inglés básico</h3>
+            <p>Progreso: 50%</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="imagenes/curso-ingles-intermedio.jpg" alt="Curso de inglés intermedio">
+            <label for="filtrar-cursos">Filtrar por:</label>
+            <select id="filtrar-cursos">
+              <option value="todos">Todos los cursos</option>
+              <option value="en-progreso">En progreso</option>
+              <option value="completados">Completados</option>
+            </select>
+            <h3>Inglés intermedio</h3>
+            <p>Progreso: 25%</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contenedor-footer">
+      <div class="seccion-informacion">
+        <h3>E.P.I.C</h3>
+        <p>Aprende inglés de forma fácil y divertida.</p>
+        <p>Copyright &copy; 2024 E.P.I.C</p>
+      </div>
+      <div class="seccion-enlaces">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="seccion-redes-sociales">
+        <h3>Redes sociales</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@hugoangulo4612"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/a55b3b6d6e.js" crossorigin="anonymous"></script>
+  <script src="/Js/main.js"></script>
+</body>
+</html>
